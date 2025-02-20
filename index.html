@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <img class="img1" src="img/logo.jpeg" alt="Logo" width="400" height="100">
+    <img class="img2" src="img/jeune-developpeur.png" alt="Jeune développeur" width="200" height="150">
+</header>
+
+<div class="title">
+    <h1>Formulaire d'inscription pour le programme D-CLIC</h1>
+    <h2>Formation en Développement Web</h2>    
+</div>
+
+<section class="section-formulaire">   
+    <form id="form">
+        <div class="information">
+            <label for="email">Entrez votre Email <span>*</span></label>
+            <input type="email" name="email" id="email" placeholder="exemple@gmail.com" required>
+        </div>
+
+        <div class="information">
+            <label for="name">Entrez votre nom <span>*</span></label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="information">
+            <label for="firstname">Entrez votre prénom <span>*</span></label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+
+        <div class="information">
+            <label for="date">Entrez votre date de naissance <span>*</span></label>
+            <input type="date" name="date-de-naissance" id="date" required>
+        </div>
+
+        <div class="information">
+            <label for="call">Entrez votre numéro de téléphone <span>*</span></label>
+            <input type="tel" name="call" id="call" maxlength="10" pattern="01[0-9]{8}" required>
+        </div>
+
+        <div class="information">
+            <label for="message">Entrez votre motivation <span>*</span></label>
+            <textarea name="message" id="message" minlength="100" maxlength="2500" required></textarea>
+        </div>
+
+        <div class="button">
+            <button type="reset" class="btn1">Annuler</button>
+            <button type="submit" class="btn2">S'inscrire</button>
+        </div>
+    </form>
+
+    <div class="invisivible" id="confirmation">
+        <h3>Informations sur l'inscription</h3>
+        <p><strong>Email :</strong> <span id="confirm-email"></span></p>
+        <p><strong>Nom :</strong> <span id="confirm-name"></span></p>
+        <p><strong>Prénom :</strong> <span id="confirm-firstname"></span></p>
+        <p><strong>Âge :</strong> <span id="confirm-age"></span> ans</p>
+        <p><strong>Numéro :</strong> <span id="confirm-phone"></span></p>
+        <p><strong>Motivation :</strong> <span id="confirm-motivation"></span></p>
+    </div> 
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
