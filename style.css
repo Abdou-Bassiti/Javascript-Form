@@ -1,8 +1,6 @@
 /* Réinitialisation générale */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 /* Corps de la page */
@@ -123,4 +121,5 @@ body {
 /* Section de confirmation */
 .invisible {
     display: none;
-    margin-top:
+
+    }

@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentYear = new Date().getFullYear();
         const age = currentYear - birthYear;
 
-        // Vérification de l'âge (optionnel : doit avoir au moins 16 ans)
-        if (age < 16) {
-            alert("Vous devez avoir au moins 16 ans pour vous inscrire.");
+        // Vérification de l'âge (optionnel : doit avoir au moins 18 ans)
+        if (age < 18) {
+            alert("Vous devez avoir au moins 18 ans pour vous inscrire.");
             return;
         }
 
